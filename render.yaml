@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: php-app
+    env: docker
+    plan: free
+    repo: https://github.com/yourusername/your-php-app
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ENV_VAR_NAME
+        value: ENV_VAR_VALUE
